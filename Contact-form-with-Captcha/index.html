@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form with Captcha</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>Contact Us</h2>
+            <div class="row">
+                <form method="post" action="">
+                    <div><label for="name">Name</label>
+                        <input type="text" name="name" required>
+                    </div>
+                    <div><label for="email">E-mail</label>
+                        <input type="email" name="email" required>
+                    </div>
+                    <div><label for="msg">Message</label>
+                        <textarea name="msg" cols="30" rows="10" required></textarea>
+                    </div>
+                    <div class="test">
+                        <label for="captcha">Enter Captcha</label>
+                        <div class="preview"></div>
+                        <div class="captcha-form">
+                            <input type="text" class="captcha" placeholder="Enter captcha text">
+                            <button class="captcha-refresh">
+                                <i class="fa fa-refresh"></i>
+                            </button></div>
+                    </div>
+                    <div><button id="btn">Submit</button></div>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
